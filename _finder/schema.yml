@@ -1,0 +1,90 @@
+root_types:
+  - path: People
+    type: person
+  - path: Movies
+    type: movie
+  - path: Companies
+    type: company
+content:
+  type: object
+  properties:
+    name:
+      description: Name of the file, used in the breadcrumbs
+      type: string
+    title:
+      description: Override for the name, used as page title, fallback to Name
+      type: string
+    image:
+      type: media
+      path: $$
+
+    previous:
+      description: Peference to previous in the series
+      type: reference
+      meta: previous
+
+    dob:
+      title: Born
+      description: Date of birth
+      type: string
+      column: true
+    dod:
+      title: Died
+      description: Date of death
+      type: string
+      column: true
+      column_always_show: true
+
+    founders:
+      type: array
+      items:
+        type: person
+      label: Founder
+
+    website:
+      type: link
+    websites:
+      type: array
+      items:
+        type: link
+    wikipedia:
+      type: string
+
+    length:
+      type: duration
+      column: true
+    directors:
+      type: array
+      items:
+        type: person
+      column: true
+      label: Director
+
+    production:
+      type: array
+      items:
+        type: company
+
+    characters:
+      type: array
+      items:
+        type: character
+
+    references:
+      type: array
+      items:
+        type: reference
+      meta: none
+
+character:
+  type: object
+  properties:
+    name:
+      type: string
+    actor:
+      type: person
+      label: Actor
+      info: $name
+    image:
+      type: media
+      path: $$/Characters/$name

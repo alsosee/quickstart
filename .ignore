@@ -1,0 +1,17 @@
+.git*
+.ignore
+.DS_Store
+/temp/**
+/_finder/**
+/finder
+/index
+/output
+/state
+/Caddyfile
+/config.yml
+/.dockerignore
+/docker-compose.yml
+/LICENSE
+/README.md
+.github
+github

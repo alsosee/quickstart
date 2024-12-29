@@ -1,0 +1,30 @@
+title: Also, see
+description: A collection of things, people and more.
+lang: en
+url: https://alsosee.local
+media_host: https://media.alsosee.local
+repo: https://github.com/alsosee/info
+opengraph:
+  image: https://media.alsosee.info/opengraph.png
+  width: 1920
+  height: 1080
+  twitter_image: https://media.alsosee.info/twitter.png
+home_label: Home
+search_label: Search
+views_label: Views
+views_tooltip: Show items as icons, in a list or in columns
+view_icons: Icons
+view_list: List
+view_columns: Columns
+menu:
+  - title: alsosee.info
+    url: https://alsosee.info
+  - title: ru.alsosee.info
+    url: https://ru.alsosee.info
+    logo_shift_y: -44px
+label_cancel: Cancel
+label_upload: Upload
+no_results_label: No results found.
+of_label: of
+column_name: Name
+column_kind: Kind
